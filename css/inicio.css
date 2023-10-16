@@ -1,0 +1,601 @@
+
+body{
+
+    background-color: rgb(149, 154, 158);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.cabecera{
+    width: 960px;
+    height: 150px;
+    /* ######   YO LE DI 160 px de altura al header. TUVE QYE CAMBIAR #####*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(37, 184, 135) ;
+}
+p{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 14px;
+}
+
+#logo{
+    width: 140px;
+    height: 100px;
+    /* padding-bottom: 10px; */
+    float: left;
+
+    border-radius: 40% 30% 30% 40%;
+
+}
+
+#menu{
+    width: 650px;
+    /* logre que se parezca en lo largo a galeria */
+    height: 40px;
+    float: right;
+    margin-top: 120px;
+    /* logro que se separe del body...pero se pego la botonera en el techo por eso 120px del top*/
+}
+
+#menu ul {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+
+}
+
+#menu ul li a{
+    display: inline;
+    /* background-color: black; */
+    color: floralwhite;
+    /* font-weight: bold; */
+    /* LO COMENTADO NO ME SIRVE PORQUE ENSANCHA LOS BOTONES DEMASIADO */
+}
+
+#menu ul li a:hover{
+    background-color: rgb(170, 127, 16);
+    /* color: rgb(11, 95, 116); */
+    /* PENDIENTE VER ESE OTRO EFECTO QUE CAMBIE DE COLOR AUN MAS */
+}
+
+#contenidoPrincipal{
+    width: 960px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#imagen1{
+    width: 550px;
+    height: 310px;
+    float: left;
+    margin-top: 6px;
+    background-image: url(../img/car-vint.jpg);
+    background-size: cover;
+
+}
+
+#presentacion{
+    width: 400px;
+    height: 310px;
+    margin-top: 6px;
+    float: right;
+    background-color: antiquewhite;
+    /* padding: 0.5px; */
+    padding: 1px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium';
+    font-size:19px ;
+}
+
+#textoContenido{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 11px;
+
+}
+
+#articulo1{
+    width: 250px;
+    height: 300px;
+    float: left;
+    background-color: rgb(197, 235, 248);
+    margin-right: 9px;
+    margin-bottom: 10px;
+    padding: 7px;
+    /* ojo jugando cambie de 5 a 7 */
+    /* COLOCO MENOS PADDING PARA PODER ENCHUFAR LAS IMAGENES */
+    box-sizing: border-box;
+}
+
+
+#imagen2{
+
+background-image: url(../img/img3rueda.jpg);
+width: 330px;
+height: 300px;
+float: left;
+margin-left: 15px;
+margin-top: 6px;
+background-size: cover;
+}
+
+#imagen3{
+
+    background-image: url(../img/volante1.jpg);
+    width: 330px;
+    height: 300px;
+    float: right;
+    margin-right: 2px;
+    margin-top: 6px;
+    background-size: cover;
+}
+
+
+#imagen4{
+    width:960px;
+    height: 165px;
+    background-image: url(../img/simb.peug2.jpg);
+    float: inline-end;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    /* background-size: cover; */
+
+}
+
+
+footer{
+    width: 960px;
+    height: 165px;
+    /* tenia 165px */
+    background-color: rgb(167, 127, 26);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0vw 0vh 2vw 2vh;
+    color: mintcream;
+    font-family: 'Franklin Gothic Medium';
+    
+}
+
+#datos {
+    width: 300px;
+    /* height: 180px; */
+    height: 170px;
+    float: left;
+    padding: 10px;
+    margin-left: 1em;
+    /* tenia 20 */
+    margin-bottom: 1em;
+   
+}
+
+#redes {
+    width: 350px;
+    height: 35px;
+    float: left; 
+    /* padding-bottom: 1em;  */
+    /* margin-top: 0.3em; */
+    margin-top: 4em;
+    margin-left: 1em;
+
+}
+
+   
+#redes ul {
+    /* margin-top: 5px; */
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+   
+    }
+    
+#redes ul li {
+    display: inline;
+    padding: 3px;
+ }
+    
+#redes ul li img {
+    width: 2.1em;
+    height: 2.1em;
+    display: inline;
+    justify-content: center;
+    
+}
+
+
+
+/* SE INICIA CON RESPONSIVE */
+
+@media all and (min-width:600px) and (max-width:1023px){
+
+
+.cabecera{
+    width: 580px;
+    height: 140px;
+    /* ######   YO LE DI 160 px de altura al header. TUVE QYE CAMBIAR #####*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(37, 184, 135) ;
+}
+
+p{
+font-size: 11px;
+}
+
+#logo{
+    width: 100px;
+    /* REVISAR BAJO DE 240 A 200 */
+    height: autopx;
+    float: left;
+    border-radius: 40% 30% 30% 40%;
+    margin-right: 1em;
+
+}
+
+#menu{
+    width:100%;
+    /* logre que se parezca en lo largo a galeria */
+    height: auto;
+    /* cambiamos a auto en tablet y float none */
+    float: none;
+    margin-top: 20px;
+    /* logro que se separe del body...pero se pego la botonera en el techo por eso 120px del top*/
+    /* OJO HAY QUE VER AL DISMINUIR LOS 120 PX DE LO GRANDE */
+    padding: 2em;
+}
+#menu ul {
+    margin-right: 2em;
+    margin-left: 6em;
+    padding: 0%;
+    list-style-type: none;
+    margin-top: 6em;
+
+}
+
+#menu ul li a{
+    display: inline;
+    /* background-color: black; */
+
+}
+
+#menu ul li a:hover{
+    background-color: rgb(170, 127, 16);
+    display: inline;
+}
+
+#contenidoPrincipal{
+    width: 580px;
+    height:820px;
+}
+
+#imagen1{
+    width: 390px;
+    height: 310px;
+    float: left;
+    margin-top: 6px;
+    background-size: cover;
+}
+
+#presentacion{
+    width: 190px;
+    height: 310px;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+    text-align: center;
+}
+
+#textoContenido{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 9px;
+    text-align: justify;
+    padding: 0.1em ;
+
+}
+
+#articulo1{
+    width: 580px;
+    height: 150px;
+    float: left;
+}
+
+#imagen2{
+
+background-image: url(../img/img3rueda.jpg);
+width: 280px;
+height: 180px;
+float: left;
+margin-left: 2px;
+/* ACA TUVE QUE BAJAR A 2PX PARA QUE SEAN RESPONSIVE LAS 2 IMAGENES */
+margin-top: 8px;
+background-size: cover;
+}
+
+#imagen3{
+
+    background-image: url(../img/volante1.jpg);
+    width: 280px;
+    height: 180px;
+    float: right;
+    margin-right: 2px;
+    margin-top: 8px;
+    background-size: cover;
+}
+
+#imagen4{
+    width:580px;
+    height: 120px;
+    margin-top: 17px;
+    /* margin-bottom: 10px; EN MI EJEMPLO NO SIRVE  */
+}
+
+footer {
+    width: 580px;
+    height: 165px;
+}
+
+#datos p {
+    font-size: 85%;
+    /* porcentaje que hereda del mismo p no se vea tan pequeño */
+
+}
+
+#datos {
+    width: 250px; 
+    width: 220px;
+    /* para que pueda verse los datos y redes */
+}
+
+
+#redes {
+    width: 250px;   
+    height: 200px;
+    float: right;
+    
+    /* se borra el resto porque lo hereda del desktop */
+}
+
+
+#redes ul {
+margin-top: 3px;
+}
+
+#redes ul li {
+
+display: inline;
+padding: 2px;
+}
+
+#redes ul li img {
+width: 1.6em;
+height: 1.6em;
+}
+
+}
+
+
+
+/* SE INICIA RESPONSIVE PARA MOBILE */
+
+@media all and (max-width: 599px){
+
+    .cabecera{
+        width: 90%;
+        height: 10em;
+    }
+
+    p{
+        font-size:70%;
+        /* font-size: 60%; */
+    }
+
+    #logo{
+        width:25%;
+        height: 9%;
+        /* float: none; */
+        /* margin-top: 0.5em; */
+        margin-left: 35%;
+        box-sizing: border-box;
+        /* NO TOCARRR */
+
+
+    }
+
+    #menu{
+        width: 100%;
+        height: auto;
+        /* profe puso auto */
+        margin-top: 20px;
+
+    }
+
+    #menu ul {
+        margin: 0%;
+        padding: 0%;
+        height: 3em;
+        /* tenia 3em */
+        float: none;
+
+    }
+
+    #menu ul li{
+        display: block;
+    }
+
+    #menu ul li a{
+
+        display: block;
+        color: floralwhite;
+        width: 100%;
+        height: auto;
+        margin-bottom: 4em;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* HASTA ACA NOOO TOCAR O KM */
+
+    #contenidoPrincipal{
+
+        width: 90%;
+        height: auto;
+        /* float: none; */
+        margin-top: 10px;
+
+    }
+
+    /* HASTA ACA NOOO TOCAR O KM */
+
+    #imagen1{
+        /* NOOO TOCAR EL WIDTH */
+        width: 100%;
+        height: 14em;
+        float:left;
+        background-size: cover;
+        /* el pone none */
+       
+
+    }
+
+    #presentacion{
+        /* HISTORIA DEL AUTOMOVIL */
+        width: 100%;
+        /* NOO TOCAR */
+        /* el puso 90 pero no se encuadra en mi caso */
+        height: 9em;
+        /* margin-top: 6px; */
+        /* float:right; */
+        /* el pone none */
+        margin-bottom: 0.2em;
+        padding:2px;
+
+    }
+
+
+    #articulo1{
+        width:100%;
+        /* height: auto;  */
+        height: 6em;
+        margin-top: 0.3em;
+        /* padding-block: 0%; */
+        box-sizing: border-box;
+        margin-bottom: 0.2em;
+    }
+
+    #imagen2{
+
+        background-image: url(../img/img3rueda.jpg);
+        width: 100%;
+        height: 15em;
+        float: left;
+        margin-left: 0.2%;
+        /* NO TOCAR QUEDO CENTRADA */
+        /* margin-top:0.05em; */
+        background-size: cover;
+        margin-bottom: 0.2em;
+    
+    }
+
+    #imagen3{
+
+        background-image: url(../img/volante1.jpg);
+        width: 100%;
+        height: 15em;
+        float: left;
+        margin-top: 0.3em;
+        background-size: cover;
+        margin-bottom: 0.2em;
+
+    }
+
+
+    #imagen4{
+        width:100%;
+        /* height: 4em; */
+        height: 6em;
+        background-image: url(../img/simb.peug2.jpg);
+        float: inline-end;
+        margin-bottom: 0.25em;
+
+    }
+
+
+    footer{
+        width: 90%;
+        height: 9em;
+        background-color: rgb(167, 127, 26);
+        margin-top: 0;
+        /* margin-bottom: 1em; */
+        margin-right: 4.9%;
+        border-radius: 0vw 0vh 2vw 2vh;
+        float: inline-end;
+        box-sizing: border-box;
+        margin-bottom: 0.2em;
+
+    }
+
+    #datos {
+        width: 90%;
+        height: 6%;
+        float: left;
+       
+    }
+
+    #datos p{
+        font-size: 85%;
+    }
+
+    #redes {
+        width: 95%;
+        height: auto; 
+        /* height: 25%; */
+        float: none;
+        margin-top: 1em;
+        margin-bottom: 9em;
+       
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
