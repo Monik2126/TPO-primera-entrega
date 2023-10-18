@@ -192,5 +192,66 @@ footer{
     justify-content: center;
 } 
 
+footer{
+    width: 960px;
+    height: 165px;
+    /* tenia 165px */
+    background-color: rgb(167, 127, 26);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0vw 0vh 2vw 2vh;
+    color: mintcream;
+    font-family: 'Franklin Gothic Medium';
+
+}
+
+#datos {
+    width: 300px;
+    /* height: 180px; */
+    height: 170px;
+    float: left;
+    padding: 10px;
+    margin-left: 1em;
+    /* tenia 20 */
+    margin-bottom: 1em;
+
+}
+
+#redes {
+    width: 350px;
+    height: 35px;
+    display: inline;
+    /* margin-top: 4em; */
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 90em;
+    box-sizing: border-box;
+
+}
+
+
+#redes ul {
+    /* margin-top: 5px; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    }
+
+#redes ul li {
+    display: inline;
+    padding: 3px;
+ }
+
+#redes ul li img {
+    width: 2.1em;
+    height: 2.1em;
+    display: inline;
+    justify-content: center;
+
+}
+
+
 
 

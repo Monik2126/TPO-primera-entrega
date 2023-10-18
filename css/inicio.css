@@ -1,3 +1,4 @@
+ /* #### se arranca dando las propiedades desde el dispositivo mas ancho:1024px en media query #### */
 
 body{
 
@@ -6,15 +7,15 @@ body{
 
 }
 
-
 .cabecera{
     width: 960px;
     height: 150px;
-    /* ######   YO LE DI 160 px de altura al header. TUVE QYE CAMBIAR #####*/
+    /* ######   YO LE DI 150 px de altura al header. TUVE QYE CAMBIAR #####*/
     margin-left: auto;
     margin-right: auto;
     background-color:rgb(37, 184, 135) ;
 }
+
 p{
     font-family: 'Franklin Gothic Medium';
     font-size: 14px;
@@ -31,12 +32,24 @@ p{
 }
 
 #menu{
-    width: 650px;
-    /* logre que se parezca en lo largo a galeria */
+    /* el ancho en relacion al ancho total del header para la botonera #######*/
+    /* width: 650px; tenia y a mi me funcionaba baje a 550 horror*/
+
+    width: 720px;
+    /* sugerencia de revision!!########## */
+    
+    /* literatura 450 otro estilo??? */
     height: 40px;
-    float: right;
-    margin-top: 120px;
+    /* float: right; */
+    float: left;
+    /* margin-top: 85px; genial*/
+
+    margin-top: 94px;
+
+    /* tenia 120 px pero no mantenia el responsive */
+
     /* logro que se separe del body...pero se pego la botonera en el techo por eso 120px del top*/
+    /* #### VER ACA TAMBIEN A 110 ??? */
 }
 
 #menu ul {
@@ -44,21 +57,54 @@ p{
     padding: 0%;
     list-style-type: none;
 
+    /* list-style-type: none;
+    padding: 0; */
+    /* margin-left: 13%; */
+
+    margin-left: 10%;
+    margin-right: 5%;
+    /* corregido 17/10 */
+    /* background-color: hsl(0, 1%, 34%);   SACAR ESTA TODO EN LO DE ABAJO ####*/
+    border-bottom: 1px solid hsl(0, 1%, 34%);
+
+}
+#menu ul li{
+    display: inline;
+    /* corregido 17/10 */
+}
+
+
+#menu ul{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#menu li{
+
+    flex: 3 0 auto;
+    text-align: center;
 }
 
 #menu ul li a{
     display: inline;
-    /* background-color: black; */
     color: floralwhite;
+    padding:0.6em 1em;
+    /* CORREGIDO 17/10 */
     /* font-weight: bold; */
     /* LO COMENTADO NO ME SIRVE PORQUE ENSANCHA LOS BOTONES DEMASIADO */
 }
+
 
 #menu ul li a:hover{
     background-color: rgb(170, 127, 16);
     /* color: rgb(11, 95, 116); */
     /* PENDIENTE VER ESE OTRO EFECTO QUE CAMBIE DE COLOR AUN MAS */
+    /* color: brown; ##### super agregado y cambiazo de botonera 17/10*/
 }
+
 
 #contenidoPrincipal{
     width: 960px;
@@ -161,7 +207,7 @@ footer{
     border-radius: 0vw 0vh 2vw 2vh;
     color: mintcream;
     font-family: 'Franklin Gothic Medium';
-    
+
 }
 
 #datos {
@@ -173,40 +219,38 @@ footer{
     margin-left: 1em;
     /* tenia 20 */
     margin-bottom: 1em;
-   
+
 }
 
 #redes {
     width: 350px;
     height: 35px;
-    float: left; 
-    /* padding-bottom: 1em;  */
-    /* margin-top: 0.3em; */
+    float: left;
     margin-top: 4em;
     margin-left: 1em;
 
 }
 
-   
+
 #redes ul {
     /* margin-top: 5px; */
-    list-style-type: none; 
+    list-style-type: none;
     margin: 0;
     padding: 0;
-   
+
     }
-    
+
 #redes ul li {
     display: inline;
     padding: 3px;
  }
-    
+
 #redes ul li img {
     width: 2.1em;
     height: 2.1em;
     display: inline;
     justify-content: center;
-    
+
 }
 
 
@@ -226,7 +270,10 @@ footer{
 }
 
 p{
-font-size: 11px;
+
+ /* font-size: 11px;  */
+  font-size: 13px;
+ 
 }
 
 #logo{
@@ -241,34 +288,45 @@ font-size: 11px;
 
 #menu{
     width:100%;
-    /* logre que se parezca en lo largo a galeria */
     height: auto;
     /* cambiamos a auto en tablet y float none */
     float: none;
     margin-top: 20px;
-    /* logro que se separe del body...pero se pego la botonera en el techo por eso 120px del top*/
-    /* OJO HAY QUE VER AL DISMINUIR LOS 120 PX DE LO GRANDE */
-    padding: 2em;
-}
-#menu ul {
-    margin-right: 2em;
-    margin-left: 6em;
-    padding: 0%;
-    list-style-type: none;
-    margin-top: 6em;
+    padding: 2em; 
+    
 
+}
+
+#menu ul {
+    
+    padding: 0%; 
+    margin-right: 3em;
+    margin-left: 4em;
+  
+    list-style-type: none;
+    /* margin-top: 6em; */
+    margin-top: 4em;
+
+}
+#menu li{
+    /* flex: 3 0 auto; */
+    flex: 2 0 auto;
+    text-align: justify;
+    /* estaba center no va */
 }
 
 #menu ul li a{
     display: inline;
-    /* background-color: black; */
-
+   
+    padding:0.1em;
 }
+
 
 #menu ul li a:hover{
     background-color: rgb(170, 127, 16);
     display: inline;
 }
+
 
 #contenidoPrincipal{
     width: 580px;
@@ -276,16 +334,25 @@ font-size: 11px;
 }
 
 #imagen1{
-    width: 390px;
-    height: 310px;
+    /* width: 390px; */
+    width: 100%;
+    height:310px;
+    
+    /* height tenian 310px */
     float: left;
     margin-top: 6px;
     background-size: cover;
+    margin-bottom: 1em;
+ 
+    
 }
 
 #presentacion{
-    width: 190px;
-    height: 310px;
+    /* width: 190px; */
+    width: 100%;
+    height: auto;
+    
+    
 }
 
 h1{
@@ -296,16 +363,20 @@ h1{
 
 #textoContenido{
     font-family: 'Franklin Gothic Medium';
-    font-size: 9px;
-    text-align: justify;
+    /* font-size: 9px; */
+    font-size:8px ;
+
     padding: 0.1em ;
+    box-sizing: border-box;
+   
 
 }
 
 #articulo1{
     width: 580px;
     height: 150px;
-    float: left;
+    /* float: left; */
+    padding: 1.5%;
 }
 
 #imagen2{
@@ -334,13 +405,26 @@ background-size: cover;
 #imagen4{
     width:580px;
     height: 120px;
-    margin-top: 17px;
+    /* margin-top: 17px; */
+    margin-top: 19px;
     /* margin-bottom: 10px; EN MI EJEMPLO NO SIRVE  */
+   
 }
 
 footer {
     width: 580px;
     height: 165px;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: inline-end; 
+    /* margin-right: 70px;
+    margin-top: 15px; */
+    flex: auto;
+   
+   
+    
+    
+
 }
 
 #datos p {
@@ -350,17 +434,17 @@ footer {
 }
 
 #datos {
-    width: 250px; 
+    width: 250px;
     width: 220px;
     /* para que pueda verse los datos y redes */
 }
 
 
 #redes {
-    width: 250px;   
+    width: 250px;
     height: 200px;
     float: right;
-    
+
     /* se borra el resto porque lo hereda del desktop */
 }
 
@@ -382,6 +466,7 @@ height: 1.6em;
 
 }
 
+ 
 
 
 /* SE INICIA RESPONSIVE PARA MOBILE */
@@ -394,8 +479,10 @@ height: 1.6em;
     }
 
     p{
-        font-size:70%;
-        /* font-size: 60%; */
+         font-size:85%; 
+         font-family: 'Franklin Gothic Medium';
+        
+
     }
 
     #logo{
@@ -411,9 +498,9 @@ height: 1.6em;
     }
 
     #menu{
-        width: 100%;
+        /* width: 100%; no va por lo negro del hipervinculo*/
+        width: 97%;
         height: auto;
-        /* profe puso auto */
         margin-top: 20px;
 
     }
@@ -421,27 +508,38 @@ height: 1.6em;
     #menu ul {
         margin: 0%;
         padding: 0%;
-        height: 3em;
-        /* tenia 3em */
-        float: none;
-
-    }
-
-    #menu ul li{
-        display: block;
+        /* height: 3.5em; */
+        /* height: 3.5em; estaba asi*/
+        float: none; 
+      
+        display: inline;
+        /* los encolumna en mobile */
+        
+        height: auto; 
+        
+        
     }
 
     #menu ul li a{
 
-        display: block;
+        display: inline-flex; 
         color: floralwhite;
         width: 100%;
-        height: auto;
-        margin-bottom: 4em;
+        
+        height: 60%;
+                /* alto del dorado en a */
+        /* margin-top: 2%; nnooooo */
+
+        margin-bottom: 5%; 
         padding: 10px;
+        padding-bottom: 1em;
         text-align: center;
-        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap; 
+
     }
+
+
 
     /* HASTA ACA NOOO TOCAR O KM */
 
@@ -463,32 +561,33 @@ height: 1.6em;
         float:left;
         background-size: cover;
         /* el pone none */
-       
+
 
     }
 
     #presentacion{
-        /* HISTORIA DEL AUTOMOVIL */
+        /* HISTORIA */
         width: 100%;
         /* NOO TOCAR */
-        /* el puso 90 pero no se encuadra en mi caso */
-        height: 9em;
+        /* height: 9em; asi estaba*/
+        height: auto;
         /* margin-top: 6px; */
         /* float:right; */
-        /* el pone none */
+       
         margin-bottom: 0.2em;
         padding:2px;
-
+        
     }
 
 
     #articulo1{
         width:100%;
-        /* height: auto;  */
-        height: 6em;
+        height: auto;  
+        /* height: 8em; asi estaba   */
         margin-top: 0.3em;
         /* padding-block: 0%; */
-        box-sizing: border-box;
+        font-size: 85%;
+        /* box-sizing: border-box; */
         margin-bottom: 0.2em;
     }
 
@@ -503,7 +602,7 @@ height: 1.6em;
         /* margin-top:0.05em; */
         background-size: cover;
         margin-bottom: 0.2em;
-    
+
     }
 
     #imagen3{
@@ -548,21 +647,23 @@ height: 1.6em;
         width: 90%;
         height: 6%;
         float: left;
-       
+        padding-bottom: 2em;
+
     }
 
     #datos p{
-        font-size: 85%;
+        /* font-size: 90%; asi estaba muy grande*/
+        font-size: 80%;
     }
 
     #redes {
-        width: 95%;
-        height: auto; 
-        /* height: 25%; */
-        float: none;
-        margin-top: 1em;
-        margin-bottom: 9em;
-       
+        
+        width: 70%;
+        height: auto;
+        float: none; 
+        /* margin-top: 1em; */
+        margin-bottom: 9em; 
+
     }
 
 
