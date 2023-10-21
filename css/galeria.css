@@ -108,11 +108,11 @@ img{
     margin-bottom: 1.5em;
 }
 
-footer{
+/* footer{
     width: 100%;
     height: auto;
    
-}
+} */
 
                /* AHORA ARRANCO CON FLEXBOX !!! # ## #*/
 
@@ -222,6 +222,7 @@ footer{
     width: 350px;
     height: 35px;
     display: inline;
+    
     /* margin-top: 4em; */
     margin-top: 1em;
     margin-left: 1em;
@@ -240,7 +241,8 @@ footer{
     }
 
 #redes ul li {
-    display: inline;
+    display: inline; 
+    /* display: inline-block; no funciona hoy 18/10 */
     padding: 3px;
  }
 

@@ -1,4 +1,5 @@
- /* #### se arranca dando las propiedades desde el dispositivo mas ancho:1024px en media query #### */
+ /* #### se arranca dando las propiedades desde el dispositivo mas ancho:1024px  */
+
 
 body{
 
@@ -37,7 +38,7 @@ p{
 
     width: 720px;
     /* sugerencia de revision!!########## */
-    
+
     /* literatura 450 otro estilo??? */
     height: 40px;
     /* float: right; */
@@ -56,9 +57,6 @@ p{
     margin: 0%;
     padding: 0%;
     list-style-type: none;
-
-    /* list-style-type: none;
-    padding: 0; */
     /* margin-left: 13%; */
 
     margin-left: 10%;
@@ -68,6 +66,7 @@ p{
     border-bottom: 1px solid hsl(0, 1%, 34%);
 
 }
+
 #menu ul li{
     display: inline;
     /* corregido 17/10 */
@@ -255,15 +254,17 @@ footer{
 
 
 
-/* SE INICIA CON RESPONSIVE */
+/*###### SE INICIA CON RESPONSIVE TABLE ###*/
 
 @media all and (min-width:600px) and (max-width:1023px){
 
 
 .cabecera{
     width: 580px;
-    height: 140px;
-    /* ######   YO LE DI 160 px de altura al header. TUVE QYE CAMBIAR #####*/
+    /* height: 140px; tenia cuando me salia sin la imagen */
+    height: 163px;
+    /* hereda 150px !!! y el video lo duplica 200px es mucho*/
+
     margin-left: auto;
     margin-right: auto;
     background-color:rgb(37, 184, 135) ;
@@ -272,14 +273,15 @@ footer{
 p{
 
  /* font-size: 11px;  */
-  font-size: 13px;
- 
+  font-size: 12px;
+  /* como en el video  */
+
 }
 
 #logo{
     width: 100px;
     /* REVISAR BAJO DE 240 A 200 */
-    height: autopx;
+    height: auto;
     float: left;
     border-radius: 40% 30% 30% 40%;
     margin-right: 1em;
@@ -292,33 +294,35 @@ p{
     /* cambiamos a auto en tablet y float none */
     float: none;
     margin-top: 20px;
-    padding: 2em; 
-    
+    padding: 2em;
+
 
 }
 
 #menu ul {
-    
-    padding: 0%; 
+
+    padding: 0%;
     margin-right: 3em;
     margin-left: 4em;
-  
+
     list-style-type: none;
     /* margin-top: 6em; */
     margin-top: 4em;
 
 }
-#menu li{
+
+#menu ul li{
     /* flex: 3 0 auto; */
     flex: 2 0 auto;
     text-align: justify;
     /* estaba center no va */
+
 }
 
 #menu ul li a{
     display: inline;
-   
     padding:0.1em;
+    /* padding:0.6em 1em; hereda esto 19/10 */
 }
 
 
@@ -329,30 +333,30 @@ p{
 
 
 #contenidoPrincipal{
+
     width: 580px;
-    height:820px;
+    height: 820px;
+    /* se lo bajo estaba en 820 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 #imagen1{
-    /* width: 390px; */
-    width: 100%;
-    height:310px;
-    
-    /* height tenian 310px */
-    float: left;
+    width: 580px;;
+    height: 320px;
     margin-top: 6px;
     background-size: cover;
     margin-bottom: 1em;
- 
-    
 }
 
 #presentacion{
-    /* width: 190px; */
-    width: 100%;
-    height: auto;
-    
-    
+     /* articulo inicial */
+    width: 580px;
+    height: 150px;
+    background-color: antiquewhite;
+    font-size: 16px;
+
 }
 
 h1{
@@ -362,42 +366,49 @@ h1{
 }
 
 #textoContenido{
-    font-family: 'Franklin Gothic Medium';
-    /* font-size: 9px; */
-    font-size:8px ;
 
-    padding: 0.1em ;
-    box-sizing: border-box;
-   
+    font-family: 'Franklin Gothic Medium';
+    padding: 0.1em;
+    /* nooo cambia acafont-size: 18px; */
 
 }
 
 #articulo1{
     width: 580px;
-    height: 150px;
-    /* float: left; */
-    padding: 1.5%;
+    /* height: 145px; */
+    height: 120px;
+    margin-bottom: 10px;
+    font-size: 13px;
 }
+
+/* NO TOCAR NADA DE LO DE ARRIBA */
 
 #imagen2{
 
-background-image: url(../img/img3rueda.jpg);
-width: 280px;
-height: 180px;
-float: left;
-margin-left: 2px;
+    background-image: url(../img/img3rueda.jpg);
+
+    width:280px ;
+    /* height: 180px; */
+    height: 250px;
+    float: left;
+    margin-left: 0.5%;
+    /* margin-left: 2px; */
 /* ACA TUVE QUE BAJAR A 2PX PARA QUE SEAN RESPONSIVE LAS 2 IMAGENES */
-margin-top: 8px;
-background-size: cover;
+    margin-top: 8px;
+
+    background-size: cover;
 }
 
 #imagen3{
 
     background-image: url(../img/volante1.jpg);
-    width: 280px;
-    height: 180px;
+    width: 290px;
+    /* width: 280px; */
+    /* height: 180px; */
+    height: 250px;
     float: right;
-    margin-right: 2px;
+
+    /* margin-right: 2px; */
     margin-top: 8px;
     background-size: cover;
 }
@@ -408,24 +419,35 @@ background-size: cover;
     /* margin-top: 17px; */
     margin-top: 19px;
     /* margin-bottom: 10px; EN MI EJEMPLO NO SIRVE  */
-   
+
 }
+
+/* NOO TOCAR TABLET PARA ARRIBA */
 
 footer {
     width: 580px;
     height: 165px;
-    justify-content: center;
-    flex-wrap: wrap;
+   
+    
+    margin-top: 20px;
+  
     float: inline-end; 
-    /* margin-right: 70px;
-    margin-top: 15px; */
+    margin-bottom: 15px;
+    margin-top: 13px;
+    margin-right: 13%;
+    /* margin-right: auto; */
+
+    background-color: rgb(167, 127, 26);
+    color: mintcream;
     flex: auto;
-   
-   
-    
-    
+     
+ /* noo queda como quiero */
 
 }
+
+
+
+
 
 #datos p {
     font-size: 85%;
@@ -466,8 +488,6 @@ height: 1.6em;
 
 }
 
- 
-
 
 /* SE INICIA RESPONSIVE PARA MOBILE */
 
@@ -479,9 +499,9 @@ height: 1.6em;
     }
 
     p{
-         font-size:85%; 
+         font-size:85%;
          font-family: 'Franklin Gothic Medium';
-        
+
 
     }
 
@@ -510,32 +530,32 @@ height: 1.6em;
         padding: 0%;
         /* height: 3.5em; */
         /* height: 3.5em; estaba asi*/
-        float: none; 
-      
+        float: none;
+
         display: inline;
         /* los encolumna en mobile */
-        
-        height: auto; 
-        
-        
+
+        height: auto;
+
+
     }
 
     #menu ul li a{
 
-        display: inline-flex; 
+        display: inline-flex;
         color: floralwhite;
         width: 100%;
-        
+
         height: 60%;
                 /* alto del dorado en a */
         /* margin-top: 2%; nnooooo */
 
-        margin-bottom: 5%; 
+        margin-bottom: 5%;
         padding: 10px;
         padding-bottom: 1em;
         text-align: center;
         justify-content: center;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
 
     }
 
@@ -573,16 +593,16 @@ height: 1.6em;
         height: auto;
         /* margin-top: 6px; */
         /* float:right; */
-       
+
         margin-bottom: 0.2em;
         padding:2px;
-        
+
     }
 
 
     #articulo1{
         width:100%;
-        height: auto;  
+        height: auto;
         /* height: 8em; asi estaba   */
         margin-top: 0.3em;
         /* padding-block: 0%; */
@@ -647,26 +667,35 @@ height: 1.6em;
         width: 90%;
         height: 6%;
         float: left;
-        padding-bottom: 2em;
+        /* padding-bottom: 2em; */
+        /* padding-bottom: 0.5em; */
+        padding-bottom: 0.2em;
+        padding-top: 0.15em;
 
     }
 
     #datos p{
-        /* font-size: 90%; asi estaba muy grande*/
-        font-size: 80%;
+        /* font-size: 90%; asi estaba muy grande*/ 
+        font-size: 85%;
+
     }
 
     #redes {
-        
-        width: 70%;
-        height: auto;
-        float: none; 
-        /* margin-top: 1em; */
-        margin-bottom: 9em; 
 
+        /* width: 70%; */
+        /* height: auto; */
+        width: 50%;
+        height: 50%;
+        float: none;
+        /* float: left nooooooooo va; */
+        /* margin-top: 1em; */
+        /* margin-top: 0.2; */
+        padding-top: 0.1em;
+        margin-bottom: auto;
+        
     }
 
-
+    /* quedoo este footer */
 
 }
 
