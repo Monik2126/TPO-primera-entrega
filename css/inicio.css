@@ -10,7 +10,6 @@
 .cabecera{
     width: 960px;
     height: 150px;
-    /* ######   YO LE DI 150 px de altura al header. TUVE QYE CAMBIAR #####*/
     margin-left: auto;
     margin-right: auto;
     background-color:rgb(37, 184, 135) ;
@@ -24,11 +23,9 @@ p{
 #logo{
     width: 140px;
     height: 100px;
-    /* padding-bottom: 10px; */
     float: left;
     padding-top: 17px;
     padding-left: 20px;
-
     border-radius: 40% 30% 30% 40%;
 
 }
@@ -37,49 +34,31 @@ p{
 
 
 #menu{
-    /* el ancho en relacion al ancho total del header para la botonera #######*/
-    /* width: 650px; tenia y a mi me funcionaba baje a 550 horror*/
-
     width: 720px;
-    /* sugerencia de revision!!########## */
-
-    /* literatura 450 otro estilo??? */
     height: 40px;
-    /* float: right; */
     float: left;
-    /* margin-top: 85px; genial*/
-
     margin-top: 94px;
     list-style-type: none;
-
-    /* tenia 120 px pero no mantenia el responsive */
-
-    /* logro que se separe del body...pero se pego la botonera en el techo por eso 120px del top*/
-    /* #### VER ACA TAMBIEN A 110 ??? */
 }
 
 #menu ul {
-    list-style-type: none; 
-  /* es el segundo gran contenedor mencionando el ul ....es la descendencia */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: hsl(0, 1%, 34%);
     border-bottom: 3px solid hsl(0, 1%, 34%);
 
     margin-left: 10%;
-    margin-right: 5%;
-   
-
+    margin-right: 5%;  
 }
 
 
 #menu ul li{
     display: inline;
-    /* corregido 17/10 */
+
 }
 
 #menu ul a{
-    /* display: block; personalmente me gusta más pero sigo lo que él dice */
     display: inline;
     text-decoration: none;
     color: hsl(0, 14%, 97%);
@@ -95,7 +74,6 @@ p{
 }
 
 #menu li{
-
     flex: 3 0 auto;
     text-align: center;
 
@@ -105,9 +83,6 @@ p{
     display: inline;
     color: floralwhite;
     padding:0.6em 1em;
-    /* CORREGIDO 17/10 */
-    /* font-weight: bold; */
-    /* LO COMENTADO NO ME SIRVE PORQUE ENSANCHA LOS BOTONES DEMASIADO */
 }
 
 
@@ -166,8 +141,6 @@ h1{
     margin-right: 9px;
     margin-bottom: 10px;
     padding: 7px;
-    /* ojo jugando cambie de 5 a 7 */
-    /* COLOCO MENOS PADDING PARA PODER ENCHUFAR LAS IMAGENES */
     box-sizing: border-box;
 }
 
@@ -203,15 +176,12 @@ background-size: cover;
     float: inline-end;
     margin-bottom: 10px;
     margin-top: 6px;
-    /* background-size: cover; */
-
 }
 
 
 footer{
     width: 960px;
     height: 165px;
-    /* tenia 165px */
     background-color: rgb(167, 127, 26);
     margin-top: 20px;
     margin-left: auto;
@@ -224,12 +194,10 @@ footer{
 
 #datos {
     width: 300px;
-    /* height: 180px; */
     height: 170px;
     float: left;
     padding: 10px;
     margin-left: 1em;
-    /* tenia 20 */
     margin-bottom: 1em;
 
 }
@@ -245,7 +213,6 @@ footer{
 
 
 #redes ul {
-    /* margin-top: 5px; */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -274,47 +241,20 @@ footer{
 
 .cabecera{
     width: 580px;
-
     height: 163px;
-    /* hereda 150px !!! y el video lo duplica 200px es mucho*/
-
     display: inline-block;
-
-    margin-left: 15%;
-
+    margin-left: 3%;
     margin-bottom: 0;
-    /* padding-top: 2px; */
-
-    /* CON ESTO LOGRO SE PEGUE LO VERDE ARRIBA EN TABLET */
-
-    /* padding-left: 10%; */
-    /* no mueve lo de adentro del contenedor verde */
-    /* margin-right: 10%; */
-
-
-
-    /* margin-right: auto; */
     background-color:rgb(37, 184, 135) ;
-
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
 }
 
 
 p{
-
- /* font-size: 11px;  */
   font-size: 14px;
-  /* como en el video  */
-
 }
 
 #logo{
     width: 100px;
-    /* REVISAR BAJO DE 240 A 200 */
     height: auto;
     float: left;
     border-radius: 40% 30% 30% 40%;
@@ -325,44 +265,25 @@ p{
 #menu{
     width:100%;
     height: auto;
-    /* cambiamos a auto en tablet y float none */
     float: none;
     margin-top: 22px;
-    /* margin-top: 20px; */
-    /* para que no desaparezca en el responsive */
-    /* padding: 2em; */
     padding: 1em;
-
-
 }
 
 #menu ul {
     padding: 0%;
-    /* margin-right: 3em; */
     margin-right: 3em;
-    /* margin-left: 3em; */
     margin-left: 2em;
     list-style-type: none;
-    /* margin-top: 6em; */
     margin-top: 4em;
-
 
 }
 
 #menu ul li{
-    /* flex: 3 0 auto; */
-    /* flex: 2 0 auto; */
     text-align: justify;
     flex-wrap: wrap;
-
-    /* estaba center no va */
-    /* height: 40%;*/
     width: 20%;
     height: 17%;
-    /* con esto ensanche lo dorado no lo blanco */
-
-
-
 }
 
 
@@ -370,17 +291,12 @@ p{
     display: inline;
     /* padding:0.1em; */
     padding: 0 auto;
-
-
 }
 
 
 #menu ul li a:hover{
     background-color: rgb(170, 127, 16);
     display: inline;
-
-
-
 }
 
 
@@ -389,7 +305,6 @@ p{
     width: 580px;
     /* height: 820px; */
     height: 780px;
-    /* se lo bajo estaba en 820 */
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -406,8 +321,6 @@ p{
 #presentacion{
      /* articulo inicial */
     width: 580px;
-    /* height: 150px; */
-    /* height: 165px; */
     height: 200px;
     background-color: antiquewhite;
     font-size: 16px;
@@ -424,151 +337,91 @@ h1{
 
     font-family: 'Franklin Gothic Medium';
     padding: 0.1em;
-    /* nooo cambia acafont-size: 18px; */
-
 }
 
 #articulo1{
     width: 580px;
-    /* height: 145px; */
-    /* height: 120px; */
     height: 140px;
     margin-bottom: 12px;
     font-size: 13px;
 }
 
-/* NO TOCAR NADA DE LO DE ARRIBA */
 
 #imagen2{
 
     background-image: url(../img/img3rueda.jpg);
-
     width:280px ;
-
-    /* height: 250px; */
     height: 260px;
     float: left;
     margin-left: 0.5%;
-    /* margin-left: 2px; */
-/* ACA TUVE QUE BAJAR A 2PX PARA QUE SEAN RESPONSIVE LAS 2 IMAGENES */
-    margin-top: 8px;
-
-    background-size: cover;
+    
 }
 
 #imagen3{
 
     background-image: url(../img/volante1.jpg);
     width: 290px;
-    /* width: 280px; */
-
-    /* height: 250px; */
     height: 260px;
     float: right;
-
-    /* margin-right: 2px; */
     margin-top: 8px;
     background-size: cover;
 }
 
 #imagen4{
     width:580px;
-    /* height: 120px; */
     height: 140px;
-    /* margin-top: 17px; */
-    /* margin-top: 19px; */
     margin-top: 20px;
-    /* margin-bottom: 10px; EN MI EJEMPLO NO SIRVE  */
     margin-bottom: 14px;
 
 }
 
-/* NOO TOCAR TABLET PARA ARRIBA */
 
 footer {
-    width: 590px;
-    /* width: 580 tenia; */
-    /* height: 165px; */
-    /* height: 163px; tenia */
-    /* margin-bottom: auto;
-    margin-right: auto;  NOO VAAA */
+    width: 590px;  
     height: 180px;
-
     margin-top: 2px;
     float: inline-end;
-    margin-right:14% ;
-
-    /* margin-right: 0.5em; */
-    /* margin-right: 8.4%; */
-
-
+    margin-right:3% ;
     margin-bottom: 25px;
-    /* tenia 15 -20*/
-
-    /* margin-right: 13%; */
-    /* margin-right: auto; */
-    /* margin-right: auto;
-    margin-left: auto; */
-
     background-color: rgb(167, 127, 26);
     color: mintcream;
-    /* flex: auto; */
-
- /* noo queda como quiero */
 
 }
 
 
 #datos p {
-    font-size:100%;
-    /* porcentaje que hereda del mismo p no se vea tan pequeño tenia 85%*/
-
+    font-size:100%
 }
 
 #datos {
     width: 250px;
     width: 220px;
-    /* para que pueda verse los datos y redes */
     margin-top: 7px;
-    /* margin-bottom: 6px; */
-    /* tenia 2 px */
-    /* TOQUETEEE LOS MARGIN Y SE RAJARON LAS REDES JUNTO AL TAMAÑO DE LAS MISMAS */
 }
 
 
 
 #redes {
-    /* width: 250px; */
-    width: 300px;
-    /* height: 200px; */
+    width: 300px;  
     height: 210px;
     float: right;
-    /* padding-top: 22px; */
     padding-top: 26px;
-
-    /* se borra el resto porque lo hereda del desktop */
 }
 
-
 #redes ul{
-/* margin-top: 3px; */
 margin-top: 3px;
-/* tenia 8 muy abajo */
+
 }
 
 
 #redes ul li {
-
 display: inline;
 padding: 2px;
-
 }
 
 #redes ul li img {
 width: 1.6em;
 height: 1.6em;
-/* margin-top: 9px; */
-
 }
 
 }
@@ -583,10 +436,7 @@ height: 1.6em;
         width: 90%;
         height: 10em;
     }
-    /* .centrado{
-        height: 90%;
-    } intento aumentar el ancho de las letras*/
-
+  
     p{
          font-size:85%;
          font-family: 'Franklin Gothic Medium';
@@ -598,104 +448,65 @@ height: 1.6em;
         padding-top: 6%;
         margin-left: 28%;
         box-sizing: border-box;
-        /* NO TOCARRR */
+      
     }
 
     #menu{
-        /* width: 100%; no va por lo negro del hipervinculo*/
         width: 97%;
         height: auto;
-        /* margin-top: 20px; */
         margin-top: 50px;
-        /* separacion entre lo verde y cada hipervinculo */
 
     }
 
     #menu ul {
         margin: 0%;
         padding: 0%;
-        /* height: 3.5em; */
-        /* height: 3.5em; estaba asi*/
-        /* float: none; ### */
         display: inline;
-        /* los encolumna en mobile */
-        /* width: 95%; no los mueve de tamaño*/
-
-        /* height: auto; */
-        /* width: 3em; */
-        /* border-bottom: 95% solid hsl(0, 1%, 34%); */
     }
-
-    /* #menu ul li{
-        width: auto;
-        height: 100%;
-    } */
 
     #menu ul li a{
 
         display: inline-flex;
         color: floralwhite;
         width: 100%;
-
         height: 60%;
-                /* alto del dorado en a */
-        /* margin-top: 2%; nnooooo */
-
         margin-bottom: 5%;
         padding: 10px;
         padding-bottom: 1em;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
-
     }
 
-
-    /* HASTA ACA NOOO TOCAR O KM */
 
     #contenidoPrincipal{
-
         width: 90%;
         height: auto;
-        /* float: none; */
         margin-top: 10px;
-
     }
 
-    /* HASTA ACA NOOO TOCAR O KM */
-
     #imagen1{
-        /* NOOO TOCAR EL WIDTH */
+      
         width: 100%;
         height: 14em;
         float:left;
-        background-size: cover;
-        /* el pone none */
+        background-size: cover; 
     }
 
     #presentacion{
         /* HISTORIA */
         width: 100%;
-        /* NOO TOCAR */
-        /* height: 9em; asi estaba*/
         height: auto;
-        /* margin-top: 6px; */
-        /* float:right; */
-
         margin-bottom: 0.2em;
         padding:2px;
-
     }
 
 
     #articulo1{
         width:100%;
         height: 40%;
-        /* height: 8em; asi estaba   */
         margin-top: 0.3em;
-        /* padding-block: 0%; */
         font-size: 100%;
-        /* box-sizing: border-box; */
         margin-bottom: 0.2em;
 
     }
@@ -708,8 +519,6 @@ height: 1.6em;
         height: 15em;
         float: left;
         margin-left: 0.2%;
-        /* NO TOCAR QUEDO CENTRADA */
-        /* margin-top:0.05em; */
         background-size: cover;
         margin-bottom: 0.2em;
 
@@ -730,12 +539,10 @@ height: 1.6em;
 
     #imagen4{
         width:100%;
-        /* height: 4em; */
         height: 6em;
         background-image: url(../img/simb.peug2.jpg);
         float: inline-end;
         margin-bottom: 0.25em;
-
     }
 
 
@@ -744,29 +551,23 @@ height: 1.6em;
         height: 9em;
         background-color: rgb(167, 127, 26);
         margin-top: 0;
-        /* margin-bottom: 1em; */
         margin-right: 4.9%;
         border-radius: 0vw 0vh 2vw 2vh;
         float: inline-end;
         box-sizing: border-box;
         margin-bottom: 0.2em;
-
     }
 
     #datos {
         width: 90%;
         height: 6%;
         float: left;
-
-        /* margin-left: 2em; */
-        /* padding-bottom: 0.2em; */
         padding-bottom: 0em;
         padding-top: 0.15em;
 
     }
 
     #datos p{
-        /* font-size: 90%; asi estaba muy grande*/
         font-size: 85%;
 
     }
@@ -775,23 +576,13 @@ height: 1.6em;
 
         width: 80%;
         height: 60%;
-        /* height: auto; */
-        /* margin-left: 2%;ni lo mueve */
-
         display: inline;
         margin-bottom: 0.3em;
         margin-left: 1em;
-
-        /* float: left nooooooooo va; */
-        /* margin-top: 1em; */
-        /* margin-top: 0.2; */
-        /* padding-top: 0.1em;### */
         padding-top: 0.2em;
         margin-bottom: 1em;
 
     }
-
-    /* quedoo este footer */
 
 }
 

@@ -12,7 +12,6 @@
 .cabecera{
     width: 960px;
     height: 150px;
-    /* ######   YO LE DI 150 px de altura al header. TUVE QYE CAMBIAR #####*/
     margin-left: auto;
     margin-right: auto;
     background-color:rgb(37, 184, 135) ;
@@ -26,48 +25,25 @@ p{
 #logo{
     width: 140px;
     height: 100px;
-    /* padding-bottom: 10px; */
     float: left;
     padding-top: 17px;
     padding-left: 30px;
-
     border-radius: 40% 30% 30% 40%;
-
 }
 
 #menu{
-    /* el ancho en relacion al ancho total del header para la botonera #######*/
-    /* width: 650px; tenia y a mi me funcionaba baje a 550 horror*/
-
     width: 720px;
-    /* sugerencia de revision!!########## */
-
-    /* literatura 450 otro estilo??? */
     height: 40px;
-    /* float: right; */
     float: left;
-    /* margin-top: 85px; genial*/
-
     margin-top: 94px;
-
-    /* tenia 120 px pero no mantenia el responsive */
-
-    /* logro que se separe del body...pero se pego la botonera en el techo por eso 120px del top*/
-    /* #### VER ACA TAMBIEN A 110 ??? */
 }
 
 #menu ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-    
-    /* margin-left: 13%; */
-
-    /* margin-left: 10%; */
     margin-left: 6%;
-    /* margin-right: 5%; */
     margin-right: 6%;
-  
     border-bottom: 3px solid hsl(0, 1%, 34%);
 
 }
@@ -96,19 +72,20 @@ p{
     display: inline;
     color: floralwhite;
     padding:0.6em 1em;
-    /* CORREGIDO 17/10 */
-    /* font-weight: bold; */
-    /* LO COMENTADO NO ME SIRVE PORQUE ENSANCHA LOS BOTONES DEMASIADO */
 }
 
 
 #menu ul li a:hover{
     background-color: rgb(170, 127, 16);
-    /* color: rgb(11, 95, 116); */
-    /* PENDIENTE VER ESE OTRO EFECTO QUE CAMBIE DE COLOR AUN MAS */
-    /* color: brown; ##### super agregado y cambiazo de botonera 17/10*/
 }
 
+h3{
+    background-color: rgb(170, 127, 16) ;
+    margin-right: 40%;
+    /* margin-left: 3%; */
+    margin-left: 1%;
+    padding-left: 3%;
+}  
  
 .cards{
     width: 80%;
@@ -125,7 +102,6 @@ p{
     font-weight: normal;
     /* font-weight: 60% ; */
     font-size: 95%;
-    /* habia un 95%  puse 90*/
     width: 85%;
     margin-left: 5%;
 
@@ -136,7 +112,6 @@ p{
     box-sizing: content-box;
 }
 
-/* ETIQUETA SEMANTICA LA FIGURE .........por eso no va precedida de un Punto es idem h1 por ej*/
 figure{
     margin: 0 1% 1%;
     /* width: 95%; */
@@ -153,7 +128,6 @@ img{
     /* padding-top: 25% ; es mucho*/
     padding-top: 18%;
     padding-top: 15%;
-    /* para que no exista tanta separacion entre las imagenes */
     display: block;
     border: 0;
     width: 100%;
@@ -164,29 +138,23 @@ img{
     margin-bottom: 1.5em;
 }
 
-
-   
-
                /* AHORA ARRANCO CON FLEXBOX !!! # ## #*/
 
 .tarjeta{
     margin-top: 2em;
     width: 30%;
-    /* LOGRE DARLE MAS ESPACIO A CADA CARD PARA QUE AL AGRANDARSE CON EL CURSOR SE VEA MEJOR */
 }
 
 .cards{
   
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: space-around;
 }
 
 
 .centrado{
     margin: 0 auto;
-    /* 0 es arriba y abajo---- auto derecha e izquierda */
     padding: 0 1em;     
 }
 
@@ -249,10 +217,8 @@ img{
 footer{
     width: 960px;
     height: 165px;
-    /* tenia 165px */
     background-color: rgb(167, 127, 26);
     margin-top: 20px;
-    margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0vw 0vh 2vw 2vh;
@@ -263,58 +229,42 @@ footer{
 
 #datos {
     width: 300px;
-    /* height: 180px; */
     height: 170px;
-    margin-top: 6px;
-    /* padding: 5px; */
-    margin-left: 1em;
-    /* tenia 20 */
-    /* margin-bottom: 1em; */
-    padding-bottom: 0.2em;
-    /* float: left; */
-    display: inline;
-    flex-wrap: wrap;
-  
+    float: left;
+    padding-bottom: 5px;
+    margin-left: 1em; 
+    margin-bottom: 1em; 
+    
 
-}
-#datos p{
-    font-size: 100%;
 }
 
 #redes {
-    width: 300px;
-    height: 30px;
-    /* display: inline-flex;  */
-    /* display: contents; */
-    /* CON ESTO ARREGLO DISTANCIA DE REDES Y DATOS */
-    margin-top: 0.2em;
-    display: inline;
-    padding-top: 13px;
-
+    width: 350px;
+    height: 35px;
+    float: right;
+    margin-top: 0em;
+    margin-left: 1em;
 }
 
-
 #redes ul {
-    /* margin-top: 5px; */
     list-style-type: none;
     margin: 0;
     padding: 0;
+    float: right;
 
     }
 
 #redes ul li {
-    display: inline;
+    /* display: inline; */
+    float: right;
     padding: 3px;
-    
-    
  }
 
 #redes ul li img {
     width: 2.1em;
     height: 2.1em;
-    display: inline;
-   
-    /* justify-content: center; */
+    float: right;
+    
     
 
 }
@@ -324,43 +274,24 @@ footer{
 
 
     .cabecera{
-        /* width: 580px; queda angosta*/
+        
         width: 596px;
         height: auto;
-        /* height: 163px; */
-        /* hereda 150px !!! y el video lo duplica 200px es mucho*/
-    
         display: inline-block;
-    
-        margin-left: 12%;
-    
+        margin-left: 3%;
         margin-bottom: 0;
-        /* padding-top: 2px; */
-    
-        /* CON ESTO LOGRO SE PEGUE LO VERDE ARRIBA EN TABLET */
-    
-        /* padding-left: 10%; */
-        /* no mueve lo de adentro del contenedor verde */
-
-    
-        /* margin-right: auto; */
         background-color:rgb(37, 184, 135) ;
-    
-        
+   
     }
     
     
     p{
-    
-     /* font-size: 11px;  */
       font-size: 14px;
-      /* como en el video  */
     
     }
     
     #logo{
         width: 100px;
-        /* REVISAR BAJO DE 240 A 200 */
         height: auto;
         float: left;
         border-radius: 40% 30% 30% 40%;
@@ -371,48 +302,33 @@ footer{
     #menu{
         width:100%;
         height: auto;
-        /* cambiamos a auto en tablet y float none */
         float: none;
         margin-top: 22px;
-        /* margin-top: 20px; */
-        /* para que no desaparezca en el responsive */
-        /* padding: 2em; */
         padding: 1em;
     
     
     }
     
     #menu ul {
-        padding: 0%;
-        /* margin-right: 3em; */
-        margin-right: 3em;
-        /* margin-left: 3em; */
-        /* margin-left: 2em; */
+        padding: 0%; 
+        margin-right: 3em; 
         margin-left: 3em;
-        list-style-type: none;
-        /* margin-top: 6em; */
+        list-style-type: none; 
         margin-top: 4em; 
     
     }
     
     #menu ul li{
-        /* flex: 3 0 auto; */
-        /* flex: 2 0 auto; */
+     
         text-align: justify;
         flex-wrap: wrap;
-    
-        /* estaba center no va */
-        /* height: 40%;*/
         width: 20%;
         height: 17%;
-        /* con esto ensanche lo dorado no lo blanco */
-    
     }
     
     
     #menu ul li a{
         display: inline;
-        /* padding:0.1em; */
         padding: 0 auto;
     
     }
@@ -425,38 +341,25 @@ footer{
     }
 
     footer {
-        width: 590px;
-        /* width: 580 tenia; */
-        /* height: 165px; */
-        /* height: 163px; tenia */
-        /* margin-bottom: auto;
-        margin-right: auto;  NOO VAAA */
+       
+        width: 570px;
         height: 190px;
-    
         margin-top: 2px;
         float: inline-end;
-        margin-right:12% ;
-    
-        /* margin-right: 0.5em; */
-        /* margin-right: 8.4%; */
-    
-    
+        /* margin-right:12% ; */
+        margin-right: 3%;
         margin-bottom: 24px;
-        /* tenia 15 -20*/
         padding-bottom: 8px;
-    
         background-color: rgb(167, 127, 26);
         color: mintcream;
-        /* flex: auto; */
-    
-     /* noo queda como quiero */
+        
     
     }
     
     
     #datos p {
         font-size:100%;
-        /* porcentaje que hereda del mismo p no se vea tan pequeño tenia 85%*/
+       
     
     }
     
@@ -465,30 +368,25 @@ footer{
         width: 220px;
         /* para que pueda verse los datos y redes */
         margin-top: 7px;
-        /* margin-bottom: 6px; */
-        /* tenia 2 px */
-        /* TOQUETEEE LOS MARGIN Y SE RAJARON LAS REDES JUNTO AL TAMAÑO DE LAS MISMAS */
+     
     }
     
     
     
     #redes {
-        /* width: 250px; */
+      
         width: 300px;
-        /* height: 200px; */
         height: 210px;
         float: right;
         /* padding-top: 22px; */
         padding-top: 20px;
-    
-        /* se borra el resto porque lo hereda del desktop */
     }
     
     
     #redes ul{
-    /* margin-top: 3px; */
+  
     margin-top: 3px;
-    /* tenia 8 muy abajo */
+
     }
     
     
@@ -502,7 +400,7 @@ footer{
     #redes ul li img {
     width: 1.6em;
     height: 1.6em;
-    /* margin-top: 9px; */
+  
     
     }
     
@@ -516,11 +414,8 @@ footer{
     .cabecera{
         width: 90%;
         height: 10em; 
-       
     }
-    /* .centrado{
-        height: 90%;
-    } intento aumentar el ancho de las letras*/
+    
 
     p{
          font-size:85%;
@@ -529,50 +424,35 @@ footer{
 
     #logo{
         
-        width: 45%; 
-        
+        width: 45%;     
         height: 20%;
-
         margin-top: 2.5%;
         margin-left: 26%;
         box-sizing: border-box;
-        /* NO TOCARRR */
+        
     }
 
     #menu{
-        /* width: 100%; no va por lo negro del hipervinculo*/
-        /* width: 97%; */
+      
         width: 100%;
         height: auto;
-       
         margin-top: 20px;
-        /* separacion entre lo verde y cada hipervinculo */
-
+    
     }
 
     #menu ul {
         margin: 0%;
-        padding: 0%;
-        
-        display: inline;
-        /* los encolumna en mobile */
-        
+        padding: 0%;  
+        display: inline;    
     }
      
 
     #menu ul li a{
 
-        /* display: inline-flex;  */
-        display: inline;
-        
+        display: inline; 
         color: floralwhite;
         width: 100%; 
-       
-
         height: 60%;
-                /* alto del dorado en a */
-        /* margin-top: 2%; nnooooo */
-
         margin-bottom: 5%;
         padding: 10px;
         padding-bottom: 1em;
@@ -581,16 +461,12 @@ footer{
         flex-wrap: wrap;
 
     }
-    
-}
 
 footer{
     width: 90%;
-    /* height: 9em; */
     height: auto;
     background-color: rgb(167, 127, 26);
     margin-top: 0;
-    /* margin-bottom: 1em; */
     margin-right: 4.9%;
     border-radius: 0vw 0vh 2vw 2vh;
     float: inline-end;
@@ -604,15 +480,14 @@ footer{
     height: 6%;
     float: left;
 
-    /* margin-left: 2em; */
-    /* padding-bottom: 0.2em; */
+    
     padding-bottom: 0em;
     padding-top: 0.15em;
 
 }
 
 #datos p{
-    /* font-size: 90%; asi estaba muy grande*/
+
     font-size: 85%;
 
 }
@@ -623,18 +498,11 @@ footer{
     height: 60%;
     float: left;
     margin-bottom: 0.3em;
-    /* margin-left: 1em; */
-
-    /* float: left nooooooooo va; */
-    /* margin-top: 1em; */
-    /* margin-top: 0.2; */
-    /* padding-top: 0.1em;### */
-    padding-top: 0.2em;
-    /* margin-bottom: 1em; */
+    padding-top: 0.2em;  
 
 }
 
-/* quedoo este footer */
+}
 
 
 
