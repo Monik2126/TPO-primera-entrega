@@ -593,11 +593,10 @@ height: 1.6em;
     }
 
     #logo{
-        width:25%;
-        height: 9%;
-        /* float: none; */
-        /* margin-top: 0.5em; */
-        margin-left: 35%;
+        width:40%;
+        height: 13%;
+        padding-top: 6%;
+        margin-left: 28%;
         box-sizing: border-box;
         /* NO TOCARRR */
     }
@@ -607,7 +606,7 @@ height: 1.6em;
         width: 97%;
         height: auto;
         /* margin-top: 20px; */
-        margin-top: 12px;
+        margin-top: 50px;
         /* separacion entre lo verde y cada hipervinculo */
 
     }
@@ -774,12 +773,12 @@ height: 1.6em;
 
     #redes {
 
-        width: 70%;
+        width: 80%;
         height: 60%;
         /* height: auto; */
         /* margin-left: 2%;ni lo mueve */
 
-        float: none;
+        display: inline;
         margin-bottom: 0.3em;
         margin-left: 1em;
 
