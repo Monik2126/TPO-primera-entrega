@@ -1,0 +1,90 @@
+/* Formulario de contacto */
+
+.contenedor {
+    width: 90%;
+    max-width: 970px;
+    margin: auto;
+    padding: 0px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor-blog {
+    width: 100%;
+	margin-top: 10px;
+    /* background-color: #ccc; */
+}
+
+.blog_table{
+	width: 96%;
+    height: auto;
+    margin: 5px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    background-color: rgb(251, 251, 251);
+    padding-left: 30px;
+}
+
+
+/* label{
+    display: block;
+    float: center;
+} */
+
+h1{
+	font-size: 30px;
+	text-align: letf;
+	padding-bottom: 5px;
+	color: rgb(37, 184, 135);
+}
+
+
+h2{
+	font-size: 16px;
+	padding-bottom: 10px;
+	color: #0e0e0e;
+}
+
+/*Estilos para la tabla */
+
+.estilos-tabla {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.estilos-tabla thead tr {
+    background-color: rgb(37, 184, 135);
+    color: #ffffff;
+    text-align: left;
+}
+
+.estilos-tabla th,
+.estilos-tabla td {
+    padding: 12px 15px;
+}
+
+.estilos-tabla tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.estilos-tabla tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.estilos-tabla tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.estilos-tabla tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+

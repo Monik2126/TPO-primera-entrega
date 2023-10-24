@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NO SE CONECTA CON INICIO!!!!! -->
+    <link rel="shortcut icon" href="img/flavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/contacto_form.css">
+    <title>Contacto</title>
+</head>
+    
+<body>
+    <header class="cabecera">
+        <div class="m">
+
+            <img id="logo" src="img/iconoJ.png" alt="logo">
+
+            <!-- <span class="s1">Vintage Wheels</span> -->
+
+        </div>
+
+        <div class="centrado">
+
+            <section class="menu-section">
+
+                <nav id="menu">
+                    <ul>
+                        <li id="#"><a href="index.html">Inicio</a></li>
+                        <li id="#"><a href="galeria.html">Galeria</a></li>
+                        <li id="#"><a href="blog.html">Blog</a></li>
+                        <li id="#"><a href="#">Contacto</a></li>
+
+                    </ul>
+                </nav>
+            </section>
+
+        </div>
+    </header>
+
+    <div class="contenedor">
+
+        <div class="contenedor-form">
+
+            <div class="form_contacto">
+                
+                <section>
+
+                    <h1>Contáctanos</h1>
+                    <h2>Escríbenos y nos pondremos en contacto.</h2>
+
+                    <form name="formContacto" id="formContacto" action="https://formspree.io/f/maygandv" method="POST" onSubmit="return validarForm()">
+                        
+                        <p>
+                            <label for="nombre">
+                                <span>Nombre:</span>&nbsp;&nbsp;
+                                <strong>*</strong>
+                            </label>
+                            <input type="text" id="nombre" name="nombre" />
+                        </p>
+
+                        <p>
+                            <label for="apellido">
+                                <span>Apellido:</span>
+                                <strong>*</strong>
+                            </label>
+                            <input type="text" id="apellido" name="apellido" />
+                        </p>
+
+                        <p>
+                            <label for="vehiculo">
+                                <span>Vehiculo:</span>
+                                <strong>*</strong>
+                            </label>
+                            <input type="text" id="vehiculo" name="vehiculo" />
+                        </p>
+
+                        <p>
+                            <label for="email">
+                                <span>Correo:</span>&nbsp;&nbsp;
+                                <strong>*</strong>
+                            </label>
+                            <input type="email" id="email" name="email" />
+                        </p>
+
+                        <p>
+                            <label for="mensaje">
+                                <span>Mensaje:</span>
+                                <strong>*</strong>
+                            </label>
+                            <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Deja aquí tu mensaje..."></textarea> 
+                        </p>
+
+                        <button type="submit" class="button" name="enviar" id="enviar">Enviar</button> <button type="submit" class="button" onclick="limpiarForm()" name="limpiar" id="limpiar">Limpiar</button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>	
+
+                    </form>
+
+                </section>
+
+            </div>
+        
+        </div>
+
+        <div class="contenedor-mapa">
+
+            <div class="iframe_mapa">
+
+                <section>
+
+                    <!-- acá va el mapa -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8214338612643!2d-58.39048923034079!3d-34.622218894692445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb20d8b55029%3A0x5e43d6d2bb0f226e!2sBuenos%20Aires%20Club%20Autom%C3%B3viles%20de%20Colecci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1696972648862!5m2!1ses-419!2sar" width="95%" height="705" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </section>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/scripts.js"></script>
+
+    <footer>
+        <div id="datos">
+            <p>Solís 1174 (1078). CABA</p>
+            <P>Celular: 011-5689-6353</P>
+            <p>Email: <a href="mailto:vintage.wheels@gmail.com">vintage.wheels@gmail.com</a></p>
+        </div>
+            
+        <div>       
+            <nav id="redes">
+                    <!-- botonera_footer -->
+                    <ul>
+                        <li><a href="#"><img src="icon/icoF.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="icon/icoyt.png" alt="googleplus"></a></li>
+                        <li><a href="#"><img src="icon/icoInst.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="icon/icoP.png" alt="pinterest"></a></li>
+                        <li><a href="#"><img src="icon/icoTwold.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="icon/iconVm.png" alt="vimeo"></a></li>
+                    
+                    </ul>
+            </nav>    
+                
+        </div>      
+    </footer>
+    
+</body>
+
+</html>
