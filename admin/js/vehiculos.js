@@ -4,7 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         // url:"http://127.0.0.1:5000/vehiculos",
-        url:"http://vintagewheels.pythonanywhere.com/vehiculos",
+        url:"https://vintagewheels.pythonanywhere.com/vehiculos",
         vehiculos:[],
         error:false,
         cargando:true
@@ -32,7 +32,7 @@ const { createApp } = Vue
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             // const url = 'http://localhost:5000/borrar/' + id;
-            const url = 'http://vintagewheels.pythonanywhere.com/borrar/' + id;
+            const url = 'https://vintagewheels.pythonanywhere.com/borrar/' + id;
             var options = {
                 method: 'DELETE',
             }

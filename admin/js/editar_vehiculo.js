@@ -64,7 +64,7 @@ function modificar() {
         renta: rentaForm,
     }
     // let url = "http://localhost:5000/update/"+id
-    let url = "http://vintagewheels.pythonanywhere.com/update/"+id
+    let url = "https://vintagewheels.pythonanywhere.com/update/"+id
     var options = {
         body: JSON.stringify(vehiculo),
         method: 'PUT',

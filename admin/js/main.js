@@ -18,11 +18,11 @@ button.addEventListener('click', (e) => {
     if(username.value=='admin' && password.value=='123456') {
         alert("Bienvenido!");
         //window.location.href = "./vehiculos.html";
-        window.location.href = "http://localhost:5500/admin/templates/vehiculos.html";
+        window.location.href = "https://vintage-wheels.netlify.app/admin/templates/vehiculos.html";
     } else {
         alert("Error: Datos incorrectos...");
         console.error(err);
-        window.location.href = "http://localhost:5500/admin/index.html";
+        window.location.href = "https://vintage-wheels.netlify.app/admin/index.html";
     }
 
 
