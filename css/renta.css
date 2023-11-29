@@ -200,17 +200,20 @@ img{
     text-align: center;    
 }
 
-.cards{
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
+.blog_table{
+    width: 96%;  
+    height: auto;  
+    margin: 5px auto;  
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    background-color: rgb(251, 251, 251);
+    padding-left: 30px;
+    float: none;
+    box-sizing: border-box;
+    overflow: auto;
+    font-size: 14px;
 }
-
- .v1{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-} 
 
 footer{
     width: 960px;
@@ -261,11 +264,18 @@ footer{
 #redes ul li img {
     width: 2.1em;
     height: 2.1em;
+    /* float: inline-end; */
+    /* justify-content: right; */
+    display: inline;
     float: right;
-    
-    
+  
+   
+
+  
 
 }
+
+
 
 
 @media all and (min-width:600px) and (max-width:1023px){

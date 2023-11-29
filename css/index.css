@@ -16,7 +16,8 @@
 }
 
 p{
-    font-family: 'Franklin Gothic Medium';
+    
+    font-family: Helvetica;
     font-size: 14px;
 }
 
@@ -117,18 +118,20 @@ p{
     float: right;
     background-color: antiquewhite;
     /* padding: 0.5px; */
-    padding: 1px;
+    padding: 3px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
 
 h1{
-    font-family: 'Franklin Gothic Medium';
+    font-family: Helvetica;
     font-size:19px ;
+    margin-left: 18px;
 }
 
 #textoContenido{
-    font-family: 'Franklin Gothic Medium';
+    /* font-family: 'Franklin Gothic Medium'; */
+    font-family: Helvetica;
     font-size: 11px;
 
 }
@@ -189,6 +192,7 @@ footer{
     border-radius: 0vw 0vh 2vw 2vh;
     color: mintcream;
     font-family: 'Franklin Gothic Medium';
+   
 
 }
 
@@ -328,15 +332,18 @@ p{
 }
 
 h1{
-    font-family: 'Franklin Gothic Medium';
+    /* font-family: 'Franklin Gothic Medium'; */
+    font-family: Helvetica;
     font-size: 16px;
     text-align: center;
 }
 
 #textoContenido{
 
-    font-family: 'Franklin Gothic Medium';
+    /* font-family: 'Franklin Gothic Medium'; */
+    font-family: Helvetica;
     padding: 0.1em;
+   
 }
 
 #articulo1{
@@ -344,6 +351,7 @@ h1{
     height: 140px;
     margin-bottom: 12px;
     font-size: 13px;
+  
 }
 
 
@@ -385,6 +393,7 @@ footer {
     margin-bottom: 25px;
     background-color: rgb(167, 127, 26);
     color: mintcream;
+    font-size: 14px;
 
 }
 
@@ -439,7 +448,8 @@ height: 1.6em;
   
     p{
          font-size:85%;
-         font-family: 'Franklin Gothic Medium';
+         /* font-family: 'Franklin Gothic Medium'; */
+         font-family: Helvetica;
     }
 
     #logo{
@@ -506,7 +516,8 @@ height: 1.6em;
         width:100%;
         height: 40%;
         margin-top: 0.3em;
-        font-size: 100%;
+        /* font-size: 100%; */
+        font-size: 12px;
         margin-bottom: 0.2em;
 
     }
@@ -556,6 +567,7 @@ height: 1.6em;
         float: inline-end;
         box-sizing: border-box;
         margin-bottom: 0.2em;
+        font-family: 'Franklin Gothic Medium';
     }
 
     #datos {

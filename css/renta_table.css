@@ -25,6 +25,7 @@
 	padding-bottom: 20px;
     background-color: rgb(251, 251, 251);
     padding-left: 30px;
+   
 }
 
 
@@ -56,6 +57,7 @@ h2{
     font-family: sans-serif;
     min-width: 900px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   
 }
 
 .estilos-tabla thead tr {
@@ -71,10 +73,13 @@ h2{
 
 .estilos-tabla tbody tr {
     border-bottom: 1px solid #dddddd;
+    /* box-sizing: border-box;
+    overflow: auto; */
 }
 
 .estilos-tabla tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
+   
 }
 
 .estilos-tabla tbody tr:last-of-type {
@@ -85,6 +90,8 @@ h2{
     font-weight: bold;
     color: #009879;
 }
+
+
 
 .boton{
     
@@ -131,4 +138,11 @@ a:hover{
 .no_option {
     color: rgb(255, 0, 0);
     font-weight: bolder;
+}
+
+#tabla_usuarios{
+    box-sizing: border-box;
+    overflow: auto;
+    width: 960px;
+    height: auto;
 }

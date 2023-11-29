@@ -8,18 +8,24 @@
 
     display: flex;
     gap: 20px;
+
+	
 }
 
 .contenedor-form {
-    width: 50%;
+    width: 50%;	
 	margin-top: 10px;
     /* background-color: #ccc; */
+	box-sizing: border-box;
+	overflow: auto;
+	
 }
 
 .contenedor-mapa {
-    width: 50%;
+    width: 50%;	
 	margin-top: 10px;
     /* background-color: #ccc; */
+	
 }
 
 
@@ -33,6 +39,8 @@
 	padding-bottom: 20px;
     background-color: rgb(251, 251, 251);
     padding-left: 30px;
+	box-sizing: border-box;
+	overflow: auto;
 }
 
 input{
