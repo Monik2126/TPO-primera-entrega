@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- NO SE CONECTA CON INICIO!!!!! -->
     <link rel="shortcut icon" href="img/flavicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/blog_table.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="css/renta.css">
+    <link rel="stylesheet" href="css/renta_table.css">
+    <title>Renta</title>
 </head>
-    
+
 <body>
     <header class="cabecera">
         <div class="m">
@@ -29,7 +29,7 @@
                     <ul>
                         <li id="#"><a href="index.html">Inicio</a></li>
                         <li id="#"><a href="galeria.html">Galeria</a></li>
-                        <li id="#"><a href="#">Blog</a></li>
+                        <li id="#"><a href="blog.html">Blog</a></li>
                         <li id="#"><a href="contacto.html">Contacto</a></li>
 
                     </ul>
@@ -41,38 +41,42 @@
 
     <div class="contenedor">
 
-        <div class="contenedor-blog">
+        <div id="app" class="contenedor-blog">
 
             <div class="blog_table">
                 
                 <section>
 
-                    <h1>Blog</h1>
-                    <h2>Listado de usuarios participantes</h2>
+                    <h1>Renta de Vehículos Vintage</h1>
+                    <h2>Listado de vehículos disponibles para renta (costo x día)</h2>
 
-                        <table class="estilos-tabla">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Nombre</th>
-                                    <th>Usuario</th>
-                                    <th>Email</th>
-                                    <th>Sitio</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tabla_usuarios"></tbody>
-                        </table>
-
-                    <script src="./js/blog.js"></script>
+                    <table class="estilos-tabla">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Vehiculo</th>
+                                <th>Costo Renta</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="vehiculo in vehiculos">
+                                <td><a :href=vehiculo.imagen target="_blank" onClick="window.open(this.href, this.target, 'width=900,height=600'); return false;"><img :src=vehiculo.imagen alt="" width="75" height="50"></a></td>
+                                <td>Marca: {{vehiculo.marca}}<br/>Modelo: {{vehiculo.modelo}}<br/>Año: {{vehiculo.anio}}</td>
+                                <td>$&nbsp;{{vehiculo.precio.toLocaleString()}}</td>
+                                <td v-if="vehiculo.renta==true" class="si_option">DISPONIBLE</td>
+                                <td v-else class="no_option">ALQUILADO</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </section>
 
             </div>
-        
-        </div>
 
+        </div>
+        
     </div>
-    <script src="js/scripts.js"></script>
 
     <footer>
         <div id="datos">
@@ -97,6 +101,9 @@
             
         </div>           
     </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/renta.js"></script>
     
 </body>
 
