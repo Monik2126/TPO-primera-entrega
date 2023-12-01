@@ -64,8 +64,8 @@
                                 <td><a :href=vehiculo.imagen target="_blank" onClick="window.open(this.href, this.target, 'width=900,height=600'); return false;"><img :src=vehiculo.imagen alt="" width="75" height="50"></a></td>
                                 <td>Marca: {{vehiculo.marca}}<br/>Modelo: {{vehiculo.modelo}}<br/>Año: {{vehiculo.anio}}</td>
                                 <td>$&nbsp;{{vehiculo.precio.toLocaleString()}}</td>
-                                <td v-if="vehiculo.renta==true" class="si_option">DISPONIBLE</td>
-                                <td v-else class="no_option">ALQUILADO</td>
+                                <td v-if="vehiculo.renta==true" class="no_option">ALQUILADO</td>
+                                <td v-else class="si_option">DISPONIBLE</td>
                             </tr>
                         </tbody>
                     </table>
