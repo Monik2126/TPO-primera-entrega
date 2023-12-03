@@ -10,8 +10,7 @@ const { createApp } = Vue
         cargando:true
       }
     },
-    // Se llama después de que la instancia haya 
-    // terminado de procesar todas las opciones relacionadas con el estado.
+   
     created() {
         this.fetchData(this.url)  // Invocando al método
     },

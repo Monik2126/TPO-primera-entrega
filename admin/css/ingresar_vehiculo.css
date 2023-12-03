@@ -4,7 +4,8 @@
 }
 
 .container-form{
-    background: radial-gradient(circle, #ffcccc, #009999);
+    
+    background-color: rgb(149, 154, 158);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,8 +14,12 @@
 }
 
 form{
-    background-color: #001F3F;
-    width: 40vw;
+   
+    background-color: rgb(170, 127, 16);
+   /* background-color: #001F3F; */
+    /* width: 40vw; */
+    margin-bottom: 8%;
+    width: 45vw;
     height: 60vh;
     border-radius: 3vw;
     display: flex;
@@ -28,16 +33,15 @@ form{
 }
 
 label{
-    font-size: 1vw;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-size: 1vw;  
     font-family: Arial, sans-serif;
-    color: aliceblue;
+    font-size: 1em;
+    color: black;
 }
 
 button {
     padding: 0.2vw 0.3vh;
     font-size: 1.6vw;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-family: Arial, sans-serif;
     background-color: #ff9999;
     color: #ffffff;

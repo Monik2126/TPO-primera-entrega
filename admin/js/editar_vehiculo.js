@@ -1,12 +1,9 @@
+
 // Procedimiento para traer los datos del registro a editar
-// Ej: "id=9&nombre=bulbasaur"
+
 let cadena = location.search; // Cadena con los símbolos & y =
 
-// Crear un objeto URLSearchParams con la cadena
-// El objeto URLSearchParams en JavaScript es una
-// interfaz que proporciona métodos y propiedades para
-// trabajar con las cadenas de consulta (query strings) en URLs.
-// Facilitando la obtención de parámetros y valores individuales
+
 let datos = new URLSearchParams(cadena);
 
 // Crear un objeto para almacenar los nombres de las variables y sus valores
@@ -69,8 +66,7 @@ function modificar() {
         body: JSON.stringify(vehiculo),
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        // el navegador seguirá automáticamente las redirecciones y
-        // devolverá el recurso final al que se ha redirigido.
+       
         redirect: 'follow'
     }
     fetch(url, options)
@@ -78,12 +74,11 @@ function modificar() {
             console.log("modificado")
             alert("Registro modificado")
 
-            //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
             window.location.href = "./vehiculos.html";  
           
         })
         .catch(err => {
-            //this.errored = true
+           
             console.error(err);
             alert("Error al Modificar")
         })      

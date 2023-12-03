@@ -28,6 +28,3 @@ button.addEventListener('click', (e) => {
 
 })
 
-/* FROM:
-        https://www.youtube.com/watch?v=3EHY_fe3U9M&ab_channel=AutoDidactDev
-*/
